@@ -307,8 +307,150 @@ footer p {
     nav a {
         margin: 5px 0;
         width: 80%; /* Make navigation links full width */
-        text-align: center;
-    }
+        text-align: body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f7f6;
+    color: #333;
 }
+
+.header {
+    background-color: #4CAF50; /* K DAIRY FRESH green */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header nav li {
+    margin-left: 20px;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.header nav a:hover,
+.header nav a.active {
+    background-color: #45a049;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    color: #4CAF50;
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Specific card styles */
+.summary-card p {
+    font-size: 1.1em;
+    margin: 8px 0;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li {
+    margin-bottom: 10px;
+}
+
+.quick-links a {
+    display: block;
+    background-color: #007BFF; /* Blue for quick actions */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.quick-links a:hover {
+    background-color: #0056b3;
+}
+
+.recent-activity .activity-list p {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-left: 3px solid #ccc;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+.alerts-warnings .alert {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.low-stock-alert {
+    background-color: #ffe0b2; /* Light orange */
+    color: #e65100; /* Dark orange */
+    border-left: 5px solid #ff9800;
+}
+
+.expiring-soon {
+    background-color: #ffcdd2; /* Light red */
+    color: #d32f2f; /* Dark red */
+    border-left: 5px solid #f44336;
+}
+
+.key-metrics p {
+    font-size: 1.1em;
+    margin: 8px 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+}
+
 
 
