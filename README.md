@@ -74,3 +74,241 @@ For president
     <script src="script.js"></script>
 </body>
 </html>
+<//* General Body and Container Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8f4; /* Lighter green tint */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* Header Styles */
+header {
+    background-color: #3cb371; /* Medium Sea Green */
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #e0ffe0; /* Very light green */
+    padding: 12px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+nav a {
+    text-decoration: none;
+    color: #2e8b57; /* Sea Green */
+    padding: 10px 20px;
+    margin: 0 8px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
+nav a:hover, nav a.active {
+    background-color: #90ee90; /* Light Green */
+    color: #1e5c3e;
+}
+
+/* Feature Card Styles */
+.feature-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h2 {
+    color: #2e8b57; /* Sea Green */
+    margin-top: 0;
+    border-bottom: 2px solid #90ee90;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form select,
+form textarea {
+    width: calc(100% - 22px); /* Account for padding and border */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Button Styles */
+button {
+    background-color: #32cd32; /* Lime Green */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #228b22; /* Forest Green */
+    transform: translateY(-2px);
+}
+
+/* Notification Specific Styles */
+.notification-item {
+    background-color: #fffacd; /* Lemon Chiffon */
+    border-left: 6px solid #ff7f50; /* Coral */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-item.dismissed {
+    opacity: 0.6;
+    text-decoration: line-through;
+    font-style: italic;
+    background-color: #f8f8f8;
+    border-left-color: #ccc;
+}
+
+.dismiss-btn {
+    background-color: #ff6347; /* Tomato Red */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s ease;
+}
+
+.dismiss-btn:hover {
+    background-color: #cc4c3a;
+}
+
+/* Record Entry Styles */
+.record-entry {
+    background-color: #f9fdf9; /* Very light green */
+    border: 1px solid #e0ffe0;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.record-entry strong {
+    color: #2e8b57;
+}
+
+.record-entry p {
+    margin: 5px 0;
+}
+
+/* Utility / List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f5fff5;
+    border-bottom: 1px dashed #e0ffe0;
+    padding: 8px 0;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 25px;
+    background-color: #3cb371;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Design (basic) */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        margin: 5px 0;
+        width: 80%; /* Make navigation links full width */
+        text-align: center;
+    }
+}
+
+
